@@ -22,7 +22,7 @@
 {"headline":"Abdulhamit Çelik","url":"http://localhost:4000/","@type":"WebSite","description":"my resume website","name":"Abdulhamit Çelik","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/me.jpeg"}},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=d113bf62c6ed08820e4aea0136cc077bedde7064">
+    <link rel="stylesheet" href="/assets/css/style.css?v=53a5fe72c7a270c34bd89ed6a77f4ad5f1cc6c52">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -37,6 +37,8 @@
 
 <!-- end custom head snippets -->
 
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -46,8 +48,7 @@
           <img class="pp"src="/assets/img/me.jpeg" alt="Logo" />
         
 
-       <h1><a class = "title" href="/">Abdulhamit Çelik</a></h1>
-
+       <h1 ><a id="text" class ="title" href="/">Abdulhamit Çelik</a></h1>
 
         <p>C.E Student<br>Karabuk University</p>
 
@@ -71,10 +72,10 @@
 <blockquote>
   <p>All of my projects built with Django</p>
   <ul>
-    <li><a href="https://github.com/hmtcelik/hocaninotla" target="_blank">Hocani Notla</a></li>
-    <li><a href="https://github.com/hmtcelik/django-AreaCalc" target="_blank">Area and Volume Calculator</a></li>
-    <li><a href="https://github.com/hmtcelik/To-Do-App" target="_blank">To-do App for Daily Tasks</a></li>
-    <li><a href="https://github.com/hmtcelik/django_blog" target="_blank">Basic Blog</a></li>
+    <li><a class="changes" href="https://github.com/hmtcelik/hocaninotla" target="_blank">Hocani Notla</a></li>
+    <li><a class="changes" href="https://github.com/hmtcelik/django-AreaCalc" target="_blank">Area and Volume Calculator</a></li>
+    <li><a class="changes" href="https://github.com/hmtcelik/To-Do-App" target="_blank">To-do App for Daily Tasks</a></li>
+    <li><a class="changes" href="https://github.com/hmtcelik/django_blog" target="_blank">Basic Blog</a></li>
   </ul>
 </blockquote>
 
@@ -89,10 +90,65 @@
 
 
 
-      </section>
+
+        <span id="opentoclose" class="opencolors" onclick="openNav()">&#9776;</span>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul class="pre-styles">
+            <li onclick="defaultcolor()" class="colors" style="background-color:#069;"></li>
+            <li onclick="red()" class="colors" style="background-color:#ff5040;"></li>
+            <li onclick="green()" class="colors" style="background-color:#88B04B;"></li>
+            <li onclick="pink()" class="colors" style="background-color:#ff9492;"></li>
+            <li onclick="maroon()" class="colors" style="background-color:#85144b;"></li>
+            <li onclick="navy()" class="colors" style="background-color:#001f3f;"></li>
+          </ul>
+        </div>
+
+
+        </section>
 
     </div>
     <script src="/assets/js/scale.fix.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      function defaultcolor()
+      {
+          document.getElementById('text').style.color='#069';
+      }
+      function red()
+      {
+          document.getElementById('text').style.color='#FF6F61';
+      }
+      function green()
+      {
+          document.getElementById('text').style.color='#88B04B';
+      }
+      function pink()
+      {
+          document.getElementById('text').style.color='#F7CAC9';
+      }
+      function maroon()
+      {
+          document.getElementById('text').style.color='#85144b';
+      }
+      function navy()
+      {
+          document.getElementById('text').style.color='#001f3f';
+      }
+      
+      
+  </script>
+  <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+  
   </body>
 </html>

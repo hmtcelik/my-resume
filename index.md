@@ -12,10 +12,10 @@ hey!
 ## My Projects
 
 >All of my projects built with Django
-  - <a href="https://github.com/hmtcelik/hocaninotla" target="_blank">Hocani Notla</a>
-  - <a href="https://github.com/hmtcelik/django-AreaCalc" target="_blank">Area and Volume Calculator</a>
-  - <a href="https://github.com/hmtcelik/To-Do-App" target="_blank">To-do App for Daily Tasks</a>
-  - <a href="https://github.com/hmtcelik/django_blog" target="_blank">Basic Blog</a>
+  - <a class="changes" href="https://github.com/hmtcelik/hocaninotla" target="_blank">Hocani Notla</a>
+  - <a class="changes" href="https://github.com/hmtcelik/django-AreaCalc" target="_blank">Area and Volume Calculator</a>
+  - <a class="changes" href="https://github.com/hmtcelik/To-Do-App" target="_blank">To-do App for Daily Tasks</a>
+  - <a class="changes" href="https://github.com/hmtcelik/django_blog" target="_blank">Basic Blog</a>
   
 
 ### For Collab and Contact
