@@ -13,6 +13,7 @@ hey!
 
 >All of my projects built with Django
   - <a class="changes" href="https://github.com/hmtcelik/hocaninotla" target="_blank">Hocani Notla</a>
+  - <a class="changes" href="https://hmtcelik.github.io/cool-calculator/" target="_blank">Cool Calculator (ReactJS)</a>
   - <a class="changes" href="https://github.com/hmtcelik/django-AreaCalc" target="_blank">Area and Volume Calculator</a>
   - <a class="changes" href="https://github.com/hmtcelik/To-Do-App" target="_blank">To-do App for Daily Tasks</a>
   - <a class="changes" href="https://github.com/hmtcelik/django_blog" target="_blank">Basic Blog</a>
