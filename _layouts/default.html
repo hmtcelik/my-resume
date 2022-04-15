@@ -25,7 +25,7 @@
           <img class="pp"src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-       <h1 ><a id="text" class ="title" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
+       <h1 ><a id="text" class ="title changecolor" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         <p>C.E Student<br>Karabuk University</p>
 
@@ -44,7 +44,7 @@
             <li onclick="defaultcolor()" class="colors" style="background-color:#069;"></li>
             <li onclick="red()" class="colors" style="background-color:#ff5040;"></li>
             <li onclick="green()" class="colors" style="background-color:#88B04B;"></li>
-            <li onclick="pink()" class="colors" style="background-color:#ff9492;"></li>
+            <li onclick="pink()" class="colors" style="background-color:#9c32a2;"></li>
             <li onclick="maroon()" class="colors" style="background-color:#85144b;"></li>
             <li onclick="navy()" class="colors" style="background-color:#001f3f;"></li>
           </ul>
@@ -59,27 +59,45 @@
     <script>
       function defaultcolor()
       {
-          document.getElementById('text').style.color='#069';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#069'
+        }
       }
       function red()
       {
-          document.getElementById('text').style.color='#FF6F61';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#FF6F61'; 
+        }
       }
       function green()
       {
-          document.getElementById('text').style.color='#88B04B';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#88B04B';
+        }
       }
       function pink()
       {
-          document.getElementById('text').style.color='#F7CAC9';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){ 
+          arr[x].style.color='#9c32a2';
+        }
       }
       function maroon()
       {
-          document.getElementById('text').style.color='#85144b';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#85144b';
+        }
       }
       function navy()
       {
-          document.getElementById('text').style.color='#001f3f';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#001f3f';
+        }
       }
       
       

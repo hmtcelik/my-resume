@@ -24,7 +24,7 @@
 {"headline":"Django-AreaCalculator","dateModified":"2022-01-15T00:00:00+03:00","datePublished":"2022-01-15T00:00:00+03:00","url":"http://localhost:4000/areacalc","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/areacalc"},"@type":"BlogPosting","description":"This website can calculation area and volume some 3D objects. Built with Python Django 3.2.9","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/me.jpeg"}},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=0a19206199ccbe3c13202dd7f1fc805f89bbebbe">
+    <link rel="stylesheet" href="/assets/css/style.css?v=b81846fda773d72434ec929e1ea6c3f9e06fd974">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -50,7 +50,7 @@
           <img class="pp"src="/assets/img/me.jpeg" alt="Logo" />
         
 
-       <h1 ><a id="text" class ="title" href="/">Abdulhamit Çelik</a></h1>
+       <h1 ><a id="text" class ="title changecolor" href="/">Abdulhamit Çelik</a></h1>
 
         <p>C.E Student<br>Karabuk University</p>
 
@@ -100,7 +100,7 @@
             <li onclick="defaultcolor()" class="colors" style="background-color:#069;"></li>
             <li onclick="red()" class="colors" style="background-color:#ff5040;"></li>
             <li onclick="green()" class="colors" style="background-color:#88B04B;"></li>
-            <li onclick="pink()" class="colors" style="background-color:#ff9492;"></li>
+            <li onclick="pink()" class="colors" style="background-color:#9c32a2;"></li>
             <li onclick="maroon()" class="colors" style="background-color:#85144b;"></li>
             <li onclick="navy()" class="colors" style="background-color:#001f3f;"></li>
           </ul>
@@ -115,27 +115,45 @@
     <script>
       function defaultcolor()
       {
-          document.getElementById('text').style.color='#069';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#069'
+        }
       }
       function red()
       {
-          document.getElementById('text').style.color='#FF6F61';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#FF6F61'; 
+        }
       }
       function green()
       {
-          document.getElementById('text').style.color='#88B04B';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#88B04B';
+        }
       }
       function pink()
       {
-          document.getElementById('text').style.color='#F7CAC9';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){ 
+          arr[x].style.color='#9c32a2';
+        }
       }
       function maroon()
       {
-          document.getElementById('text').style.color='#85144b';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#85144b';
+        }
       }
       function navy()
       {
-          document.getElementById('text').style.color='#001f3f';
+        var arr = document.getElementsByClassName("changecolor");
+        for (var x=0; x<arr.length; x++){
+          arr[x].style.color='#001f3f';
+        }
       }
       
       
