@@ -6,8 +6,8 @@ hey!
 
 ## Now
 
->I am working on back-end web programming
-  - Python-django
+>Web dev
+  - Django and ReactJS
 
 ## My Projects
 
