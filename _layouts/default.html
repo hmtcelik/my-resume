@@ -8,6 +8,7 @@
     {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
@@ -20,24 +21,16 @@
   <body>
     <div class="wrapper">
       <header>
-
         {% if site.logo %}
           <img class="pp"src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
        <h1 ><a id="text" class ="title changecolor" href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
-
         <p>C.E Student<br>Karabuk University</p>
-
-
+        {% include socials.html %}
       </header>
       <section>
-
       {{ content }}
-
-
         <span id="opentoclose" class="opencolors" onclick="openNav()">&#9776;</span>
-
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <ul class="pre-styles">
@@ -49,69 +42,9 @@
             <li onclick="navy()" class="colors" style="background-color:#001f3f;"></li>
           </ul>
         </div>
-
-
-        </section>
-
+      </section>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script>
-      function defaultcolor()
-      {
-        var arr = document.getElementsByClassName("changecolor");
-        for (var x=0; x<arr.length; x++){
-          arr[x].style.color='#069'
-        }
-      }
-      function red()
-      {
-        var arr = document.getElementsByClassName("changecolor");
-        for (var x=0; x<arr.length; x++){
-          arr[x].style.color='#FF6F61'; 
-        }
-      }
-      function green()
-      {
-        var arr = document.getElementsByClassName("changecolor");
-        for (var x=0; x<arr.length; x++){
-          arr[x].style.color='#88B04B';
-        }
-      }
-      function pink()
-      {
-        var arr = document.getElementsByClassName("changecolor");
-        for (var x=0; x<arr.length; x++){ 
-          arr[x].style.color='#9c32a2';
-        }
-      }
-      function maroon()
-      {
-        var arr = document.getElementsByClassName("changecolor");
-        for (var x=0; x<arr.length; x++){
-          arr[x].style.color='#85144b';
-        }
-      }
-      function navy()
-      {
-        var arr = document.getElementsByClassName("changecolor");
-        for (var x=0; x<arr.length; x++){
-          arr[x].style.color='#001f3f';
-        }
-      }
-      
-      
-  </script>
-  <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-  
   </body>
 </html>

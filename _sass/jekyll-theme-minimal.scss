@@ -356,7 +356,7 @@ footer {
   top: 10%;
   right: 0;
   background-color: rgb(53, 53, 53);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -392,10 +392,17 @@ footer {
   
 }
 
-
 .pp {
   border-radius: 100%;
   width: 50%;
-  padding: 20px;
-  
+  padding: 20px;  
+}
+
+.icon{
+  color: #267CB9;
+  font-size: 20px;
+  padding: 4px;
+  &:hover{
+    font-weight: bolder;
+  }
 }

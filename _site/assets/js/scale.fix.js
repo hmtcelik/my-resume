@@ -25,3 +25,50 @@
         document.addEventListener("touchend", gestureEnd, false);
     }
 })(document);
+
+// color changers
+function defaultcolor(){
+  var arr = document.getElementsByClassName("changecolor");
+  for (var x=0; x<arr.length; x++){
+    arr[x].style.color='#069'
+  }
+}
+function red(){
+  var arr = document.getElementsByClassName("changecolor");
+  for (var x=0; x<arr.length; x++){
+    arr[x].style.color='#FF6F61'; 
+  }
+}
+function green(){
+  var arr = document.getElementsByClassName("changecolor");
+  for (var x=0; x<arr.length; x++){
+    arr[x].style.color='#88B04B';
+  }
+}
+function pink(){
+  var arr = document.getElementsByClassName("changecolor");
+  for (var x=0; x<arr.length; x++){ 
+    arr[x].style.color='#9c32a2';
+  }
+}
+function maroon(){
+  var arr = document.getElementsByClassName("changecolor");
+  for (var x=0; x<arr.length; x++){
+    arr[x].style.color='#85144b';
+  }
+}
+function navy(){
+  var arr = document.getElementsByClassName("changecolor");
+  for (var x=0; x<arr.length; x++){
+    arr[x].style.color='#001f3f';
+  }
+}
+
+// side bar
+function openNav(){
+  document.getElementById("mySidenav").style.width = "250px";
+
+}
+function closeNav(){
+document.getElementById("mySidenav").style.width = "0";
+}

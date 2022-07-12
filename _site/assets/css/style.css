@@ -228,7 +228,7 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
 @media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }
 .opencolors { position: fixed; right: 5px; top: 10%; font-size: 30px; cursor: pointer; }
 
-.sidenav { height: 200px; width: 0; position: fixed; z-index: 1; top: 10%; right: 0; background-color: #353535; overflow-x: hidden; transition: 0.5s; padding-top: 60px; }
+.sidenav { height: 200px; width: 0; position: fixed; z-index: 1; top: 10%; right: 0; background-color: #353535; overflow: hidden; transition: 0.5s; padding-top: 60px; }
 
 .sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block; transition: 0.3s; }
 
@@ -241,3 +241,6 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
 .title { text-align: center; }
 
 .pp { border-radius: 100%; width: 50%; padding: 20px; }
+
+.icon { color: #267CB9; font-size: 20px; padding: 4px; }
+.icon:hover { font-weight: bolder; }
