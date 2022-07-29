@@ -7,7 +7,10 @@ hey!
 ## Now
 
 >Web dev
-  - Django and ReactJS
+  - Django
+  - FastAPI
+  - React.js
+  - PostgreSQL
 
 ## My Projects
 
